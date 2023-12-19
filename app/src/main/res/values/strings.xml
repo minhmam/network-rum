@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NetworkDemo</string>
+    <string name="network_status">Network Status</string>
+
+    <string name="disconnected">disconnected</string>
+    <string name="connected">connected</string>
+
+    <string name="type_label">Type:</string>
+    <string name="extra_label">Extra:</string>
+    <string name="roaming_label">Roaming:</string>
+    <string name="subtype_label">Subtype:</string>
+    <string name="reason_label">Reason:</string>
+
+    <string name="toHttp_label">HTTP Requests</string>
+    <string name="get">GET Request HttpClient</string>
+    <string name="get_timeout">GET Request (Timeout)</string>
+    <string name="post">POST Request</string>
+    <string name="http">HTTP Requests</string>
+    <string name="no_connection">No Network connection!</string>
+    <string name="getHttpURLConnection">GET Request HttpURLConnection</string>
+    <string name="unable_to_fetch_data">Unable to fetch data!</string>
+    <string name="timeout">There was a Timeout!!</string>
+</resources>

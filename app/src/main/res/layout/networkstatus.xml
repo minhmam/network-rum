@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/network_status"
+
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp" />
+
+
+    <TextView
+        android:id="@+id/network_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="20sp"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginBottom="20dp" />
+
+    <TableLayout
+        android:id="@+id/details_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_marginBottom="20dp">
+        <TableRow
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_label"/>
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtype_label"/>
+            <TextView
+                android:id="@+id/subtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/extra_label"/>
+            <TextView
+                android:id="@+id/extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/roaming_label"/>
+            <TextView
+                android:id="@+id/roaming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reason_label"/>
+            <TextView
+                android:id="@+id/reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/toHttp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/toHttp_label"
+        android:onClick="onClickToHttp" />
+
+
+</LinearLayout>
